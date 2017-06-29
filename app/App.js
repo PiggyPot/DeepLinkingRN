@@ -4,7 +4,7 @@ import {
   TabNavigator,
   StackNavigator
 } from 'react-navigation';
-import RootNavigator from './createNavigation';
+import RootNavigation from './createNavigation';
 
 class App extends Component {
 
@@ -12,7 +12,7 @@ class App extends Component {
     const prefix = 'test://';
 
     return (
-      <RootNavigator uriPrefix={prefix}/>
+      <RootNavigation uriPrefix={prefix}/>
     )
   }
 }
